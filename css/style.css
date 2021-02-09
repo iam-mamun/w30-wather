@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row #left,
+.row #right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex: 1;
+}
+
+/* start style left col */
+
+.row #left {
+    background: #D5FFD2;
+}
+
+#left .align-self {
+    text-align: center;
+}
+
+#left img {
+    width: 180px;
+}
+
+#left h3 {
+    margin-top: 20px;
+}
+
+.row #right {
+    background: #8EFC8E;
+}
+
+/* end style left col */
+
+
+/* start style right col */
+
+#right .align-self {
+    text-align: center;
+}
+
+#right .align-self .form-control {
+    width: 400px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#right .align-self .form-text {
+    font-size: 12px;
+    color: #5f5f5f;
+}
+
+#right .align-self .lead {
+    margin-bottom: 15px;
+}
+
+#right .align-self h5 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* end style right col */
+
+
+/* master history */
+
+#master-history {
+    display: none;
+}
+
+#master-history .d-flex {
+    margin-top: 8px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+#master-history .d-flex .text-left {
+    text-align: left;
+}

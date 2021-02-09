@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row" id="row">
+            <div class="col" id="left">
+                <div class="align-self">
+                    <img id="branding" src="./img/openweather.png" alt="open weather">
+                    <h3>Open Weather API</h3>
+                    <p class="lead">Enter Your City, Check Your Weather Instantly</p>
+                </div>
+            </div>
+            <div class="col" id="right">
+                <div class="align-self">
+                    <img src="https://openweathermap.org/img/w/02d.png" alt="Scattered Cloud" id="condition">
+                    <p class="lead">
+                        <strong><span id="city">Dhaka</span>, <span id="country">BD</span></strong><br>
+                        <strong><span id="main">Cloud</span></strong>(<span id="description">Scattered Cloud</span>)<br>
+
+                        TEMP: <strong> <span id=temp>32</span></strong>
+                        PRESSURE: <strong> <span id="pressure">1032</span></strong>
+                        HUMIDITY: <strong><span id="humidity">75</span></strong>
+                    </p>
+                    <input type="text" id="city-input" placeholder="Enter Your City Name" class="form-control"><br>
+                    <small class="form-text">
+                        After Entering a Valid City Name Please Press Enter to Get Result
+                    </small>
+                    <h5 class="my-4">Recently Searched Result:</h5>
+                    <div class="my-5" id="history">
+
+                    </div>
+                    <div id="master-history" class="card">
+                        <div class="d-flex">
+                            <div>
+                                <img src="https://openweathermap.org/img/w/03d.png" alt="Scattered Cloud" class="condition">
+                            </div>
+                            <div class="text-left">
+                                <p>
+                                    <strong><span class="city">Dhaka</span>, <span class="country">BD</span></strong><br>
+                                    <strong><span class="main">Cloud</span></strong>
+                                    (<span class="description">Scattered Cloud</span>)<br>
+
+                                    TEMP: <strong><span class="temp">32</span></strong>
+                                    PRESSURE: <strong><span class="pressure">1032</span></strong>
+                                    HUMIDITY: <strong><span class="humidity">75</span></strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
